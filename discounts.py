@@ -1,24 +1,21 @@
-def calculator():
-    first_number = float(input("Enter the first number: "))
-    sec_number = float(input("Enter the second number: "))
-    operation = input("Enter an operation (+, -, *, /): ")
-    
-    if operation == '+':
-        result = first_number + sec_number
-        print(f"{first_number} + {sec_number} = {result}")
-    elif operation == '-':
-        result = first_number - sec_number
-        print(f"{first_number} - {sec_number} = {result}")
-    elif operation == '*':
-        result = first_number * sec_number
-        print(f"{first_number} * {sec_number} = {result}")
-    elif operation == '/':
-        if num2 == 0:
-            print("Error: Division by zero is not allowed.")
-        else:
-            result = first_number / sec_number
-            print(f"{first_number} / {sec_number} = {result}")
-    else:
-        print("Wrong Operation. Please enter +, -, *, or /.")
+def calculate_discount(price, discount_percent):
+    """
+    Calculates the final price after applying a discount if the discount is 20% or higher.
+    :param price: Original price of the item
+    :param discount_percent: Discount percentage to be applied
+    :return: Final price after applying discount or original price if discount is less than 20%
+    """
+    if discount_percent >= 20:
+        discount_amount = price * (discount_percent / 100)
+        return price - discount_amount
+    return price
 
-calculator()
+# Prompt user for input
+try:
+    price = float(input("Enter the original price of the item: "))
+    discount_percent = float(input("Enter the discount percentage: "))
+    
+    final_price = calculate_discount(price, discount_percent)
+    print(f"Final price after discount: ${final_price:.2f}")
+except ValueError:
+    print("Invalid input. Please enter numeric values.")
