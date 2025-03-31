@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="#home" class="nav-link active" data-planet="home">Home</a>
+    <a href="#about" class="nav-link" data-planet="about">About</a>
+    <a href="#projects" class="nav-link" data-planet="projects">Projects</a>
+    <a href="#contact" class="nav-link" data-planet="contact">Contact</a>
+  </nav>
+
+  <!-- Space Background -->
+  <div class="space-bg"></div>
+
+  <!-- Sections (Planets) -->
+  <section id="home" class="planet-section active">
+    <h1>Welcome to My Orbit</h1>
+    <p>Hi, I’m Davies Phiri, a coder exploring the galaxy of tech!</p>
+  </section>
+
+  <section id="about" class="planet-section">
+    <h2>About Me</h2>
+    <div class="skill-grid">
+      <div class="skill">HTML <div class="skill-bar" data-width="90"></div></div>
+      <div class="skill">CSS <div class="skill-bar" data-width="85"></div></div>
+      <div class="skill">JavaScript <div class="skill-bar" data-width="80"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="planet-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A cool app built with JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A responsive website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="planet-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
