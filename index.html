@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="#home" class="nav-link active" data-planet="home">🏠 Home</a>
+    <a href="#about" class="nav-link" data-planet="about">🪐 About Me</a>
+    <a href="#projects" class="nav-link" data-planet="projects">🚀 My Projects</a>
+    <a href="#contact" class="nav-link" data-planet="contact">📡 Connect</a>
+</nav>
+
+  <!-- Space Background -->
+  <div class="space-bg"></div>
+
+  <!-- Sections (Planets) -->
+  <section id="home" class="planet-section active">
+    <h1>Welcome to My Orbit</h1>
+    <h2>🚀 Exploring the Galaxy of Tech</h2>
+    <p>Hi, I’m Davies Phiri, a passionate coder navigating the vast universe of web development and technology.</p>
+    <p>From launching my first website to building full-fledged applications, my mission is to create seamless digital experiences.</p>
+
+    <!-- Floating Profile Picture -->
+    <img src="images/my_pic.jpeg" alt="Davies Phiri" class="profile-pic">
+
+    <!-- Quick Info Cards -->
+    <div class="quick-info">
+        <div class="info-card">💻 Web Developer</div>
+        <div class="info-card">🚀 Tech Enthusiast</div>
+        <div class="info-card">🌍 Based on Planet Earth</div>
+    </div>
+
+    <!-- Explore More Button -->
+    <a href="#about" class="explore-btn">Explore More</a>
+  </section>
+
+  <section id="about" class="planet-section">
+    <h2>🛠️ About Me</h2>
+    
+    <!-- Short Bio -->
+    <p class="short-bio">
+      With over <span class="highlight">6 years of experience</span> in development and technical support,  
+      I specialize in crafting robust web applications and solving complex technical challenges. 
+      My journey spans across backend and frontend development, bringing innovative solutions to life.
+    </p>
+    
+
+    <!-- Key Strengths -->
+    <div class="strengths">
+        <div class="strength-card">🚀 Full-Stack Developer</div>
+        <div class="strength-card">🛠️ Technical Problem-Solver</div>
+        <div class="strength-card">🎯 Passionate About Scalability</div>
+    </div>
+
+    <!-- Experience Badge -->
+    <div class="experience-badge">
+        <span>6+ Years</span>
+        <p>Development & Technical Support</p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="skill-grid">
+        <div class="skill">Elixir <div class="skill-bar" data-width="85"></div></div>
+        <div class="skill">Elixir LiveView <div class="skill-bar" data-width="80"></div></div>
+        <div class="skill">Raw PHP <div class="skill-bar" data-width="75"></div></div>
+        <div class="skill">Laravel <div class="skill-bar" data-width="85"></div></div>
+        <div class="skill">HTML <div class="skill-bar" data-width="90"></div></div>
+        <div class="skill">CSS <div class="skill-bar" data-width="85"></div></div>
+        <div class="skill">JavaScript <div class="skill-bar" data-width="80"></div></div>
+        <div class="skill">Python <div class="skill-bar" data-width="70"></div></div>
+        <div class="skill">Flutter <div class="skill-bar" data-width="60"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="planet-section">
+    <h2>🚀 My Projects</h2>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>💰 Loan Management System</h3>
+            <p>A robust system for managing loans, repayments, and customer records with automated interest calculations.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>📱 USSD System for Bills</h3>
+            <p>A USSD-based platform allowing users to pay bills (utilities, airtime, etc.) quickly and securely.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>₿ Bitcoin Wallet</h3>
+            <p>A secure Bitcoin wallet with transaction tracking, QR payments, and multi-factor authentication.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🌍 Websites & Web Apps</h3>
+            <p>Various business and portfolio websites built with Laravel, PHP, JavaScript, and modern frameworks.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🛒 eCommerce Platform</h3>
+            <p>An online store with product management, secure checkout, and user-friendly navigation for seamless shopping.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🎵 Music Blog</h3>
+            <p>A platform for music lovers to discover, review, and discuss their favorite songs and albums.</p>
+        </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="planet-section">
+    <h2>📬 Contact Me</h2>
+    
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://github.com/dolbenx" target="_blank" class="social-icon">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/davies-phiri-523b36167/" target="_blank" class="social-icon">🔗 LinkedIn</a>
+        <a href="https://twitter.com/dolbenx" target="_blank" class="social-icon">🐦 Twitter</a>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="form-message"></p>
+
+    <footer class="footer">
+      <p>&copy; 2025 All Rights Reserved. Made with ❤️ Davies.</p>
+      <nav class="footer-nav">
+          <a href="#home" class="nav-link active" data-planet="home">Home</a>
+          <a href="#about" class="nav-link" data-planet="about">About</a>
+          <a href="#projects" class="nav-link" data-planet="projects">Projects</a>
+          <a href="#contact" class="nav-link" data-planet="contact">Contact</a>
+      </nav>
+    </footer>
+  </section>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
