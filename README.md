@@ -41,7 +41,7 @@ Welcome to my **Space My World**! 🌌✨ This interactive portfolio showcases m
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/space-portfolio.git
+   git clone https://github.com/dolbenx/powerlearn-assignment-py/edit/Hackathon-1-Portfolio-Building/
    ```
 2. Open `index.html` in your browser.
 
